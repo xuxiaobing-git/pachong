@@ -6,6 +6,7 @@
 # @Project : pachong
 import requests
 from bs4 import BeautifulSoup
+import time
 
 
 class Find():
@@ -47,7 +48,7 @@ class Find():
 if __name__ == '__main__':
     b = Find()
     ttt=b.tok()
-    print(ttt)
+    print("文件已经生成")
     b.write_it()
 
 
