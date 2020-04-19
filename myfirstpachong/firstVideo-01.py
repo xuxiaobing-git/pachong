@@ -24,4 +24,6 @@ for item in items:
         f.write("【#推荐视频#"+title +"】"+videolink+'\n'+'\n')
         #print("视频标题："+title    ,  "视频URL："+videolink)
 
+        3669
+
 
