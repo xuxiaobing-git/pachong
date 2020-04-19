@@ -23,10 +23,5 @@ for item in items:
     with open('shipinliebiao.txt', "a+", encoding="utf-8") as f:
         f.write("【#推荐视频#"+title +"】"+videolink+'\n'+'\n')
         #print("视频标题："+title    ,  "视频URL："+videolink)
-#kkk66
-33633
-33
-336336
-66966
 
 
