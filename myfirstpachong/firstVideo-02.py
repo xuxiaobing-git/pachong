@@ -40,9 +40,10 @@ class Find():
     def write_it(self):
         tt=self.tok()
         dict_2=tt
+        st=time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
         for i in tt:
             with open('shipinliebiao.txt', 'a+', encoding="utf-8") as f:
-             f.write("【#推荐视频#" + i + "】" + dict_2[i] + '\n' + '\n')
+             f.write(st+ "【#推荐视频#" + i + "】" + dict_2[i] + '\n' + '\n')
 
 
 if __name__ == '__main__':
