@@ -7,6 +7,7 @@
 import requests
 from bs4 import BeautifulSoup
 import time
+import os
 
 
 class Find():
@@ -36,7 +37,12 @@ class Find():
             videolink = item.find(attrs={'class': 'info'}).a["href"]
             self.dict_name[title]=videolink
         return self.dict_name
-
+    def delete(self):
+       if os.path.exists("shipinliebiao.txt"):
+            os.remove("shipinliebiao.txt")
+            print("文件删除完毕")
+       else:
+             print("未找到文件")  # 则返回文件不存在
     def write_it(self):
         tt=self.tok()
         dict_2=tt
@@ -48,8 +54,9 @@ class Find():
 
 if __name__ == '__main__':
     b = Find()
-    ttt=b.tok()
-    print("文件已经生成")
+    b.delete()
+    b.tok()
+    print("新文件已经生成")
     b.write_it()
 
 
