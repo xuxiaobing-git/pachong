@@ -42,7 +42,7 @@ class Find():
             os.remove("shipinliebiao.txt")
             print("文件删除完毕")
        else:
-             print("未找到文件")  # 则返回文件不存在
+             print("未找到文件")
     def write_it(self):
         tt=self.tok()
         dict_2=tt
